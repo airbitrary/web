@@ -4,6 +4,9 @@ import { SITE } from "@/lib/constants";
 export const metadata: Metadata = {
   title: "Contact & Support",
   description: `Get in touch with the ${SITE.name} team.`,
+  alternates: {
+    canonical: "/contact",
+  },
 };
 
 export default function ContactPage() {

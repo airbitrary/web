@@ -22,10 +22,22 @@ export const metadata: Metadata = {
   description:
     "Airbitrary builds delightful iOS apps powered by Apple Intelligence. Discover Spin AI and Imposter AI.",
   metadataBase: new URL("https://airbitrary.com"),
+  alternates: {
+    canonical: "/",
+  },
   openGraph: {
     siteName: "Airbitrary",
     type: "website",
     locale: "en_US",
+    title: "Airbitrary — AI-powered apps that make life playful",
+    description:
+      "Airbitrary builds delightful iOS apps powered by Apple Intelligence. Discover Spin AI and Imposter AI.",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Airbitrary — AI-powered apps that make life playful",
+    description:
+      "Airbitrary builds delightful iOS apps powered by Apple Intelligence. Discover Spin AI and Imposter AI.",
   },
 };
 

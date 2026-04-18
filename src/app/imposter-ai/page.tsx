@@ -8,15 +8,42 @@ import FAQAccordion from "@/components/FAQAccordion";
 export const metadata: Metadata = {
   title: "Imposter AI — Who's bluffing?",
   description: IMPOSTER_AI.description,
+  alternates: {
+    canonical: "/imposter-ai",
+  },
   openGraph: {
+    title: "Imposter AI — Who's bluffing?",
+    description: IMPOSTER_AI.description,
+    url: "/imposter-ai",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
     title: "Imposter AI — Who's bluffing?",
     description: IMPOSTER_AI.description,
   },
 };
 
+const faqJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  mainEntity: IMPOSTER_AI.faq.map((item) => ({
+    "@type": "Question",
+    name: item.question,
+    acceptedAnswer: {
+      "@type": "Answer",
+      text: item.answer,
+    },
+  })),
+};
+
 export default function ImposterAIPage() {
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }}
+      />
       <Hero
         icon="🔍"
         title={IMPOSTER_AI.name}

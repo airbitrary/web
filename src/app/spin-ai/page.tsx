@@ -8,15 +8,42 @@ import FAQAccordion from "@/components/FAQAccordion";
 export const metadata: Metadata = {
   title: "Spin AI — A wheel of possibilities",
   description: SPIN_AI.description,
+  alternates: {
+    canonical: "/spin-ai",
+  },
   openGraph: {
+    title: "Spin AI — A wheel of possibilities",
+    description: SPIN_AI.description,
+    url: "/spin-ai",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
     title: "Spin AI — A wheel of possibilities",
     description: SPIN_AI.description,
   },
 };
 
+const faqJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  mainEntity: SPIN_AI.faq.map((item) => ({
+    "@type": "Question",
+    name: item.question,
+    acceptedAnswer: {
+      "@type": "Answer",
+      text: item.answer,
+    },
+  })),
+};
+
 export default function SpinAIPage() {
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }}
+      />
       <Hero
         icon="🎡"
         title={SPIN_AI.name}

@@ -2,6 +2,22 @@ import Link from "next/link";
 import { SITE, SPIN_AI, IMPOSTER_AI } from "@/lib/constants";
 import AppStoreButton from "@/components/AppStoreButton";
 
+export const metadata = {
+  title: "Airbitrary — AI-powered apps that make life playful",
+  description:
+    "Airbitrary builds delightful iOS apps powered by Apple Intelligence. Discover Spin AI and Imposter AI.",
+};
+
+const organizationJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  name: "Airbitrary",
+  url: "https://airbitrary.com",
+  description:
+    "Airbitrary builds delightful iOS apps powered by Apple Intelligence.",
+  email: "airbitrary@gmail.com",
+};
+
 const apps = [
   {
     ...SPIN_AI,
@@ -30,6 +46,10 @@ const apps = [
 export default function Home() {
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationJsonLd) }}
+      />
       {/* Hero */}
       <section className="relative overflow-hidden bg-gradient-to-br from-indigo-100 via-purple-50 to-pink-100 py-24 md:py-32 dark:from-indigo-950/50 dark:via-purple-950/30 dark:to-pink-950/50">
         {/* Decorative blobs */}
