@@ -70,7 +70,15 @@ export default function SpinAIPage() {
         </div>
       </section>
 
-      <ScreenshotGallery appName="Spin AI" />
+      <ScreenshotGallery
+        appName="Spin AI"
+        screenshots={[
+          { src: "/screenshots/spin-ai/1.png", alt: "Spin AI wheel customization screen" },
+          { src: "/screenshots/spin-ai/2.png", alt: "Spin AI spinning wheel in action" },
+          { src: "/screenshots/spin-ai/3.png", alt: "Spin AI result screen after spin" },
+          { src: "/screenshots/spin-ai/4.png", alt: "Spin AI wheel options and settings" },
+        ]}
+      />
 
       <FAQAccordion items={SPIN_AI.faq} />
     </>
