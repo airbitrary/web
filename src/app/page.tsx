@@ -71,11 +71,13 @@ export default function Home() {
           </h2>
           <div className="grid gap-8 md:grid-cols-2">
             {apps.map((app) => (
-              <Link
+              <div
                 key={app.href}
-                href={app.href}
                 className={`group relative overflow-hidden rounded-3xl bg-gradient-to-br ${app.cardBg} border-2 ${app.borderColor} p-8 transition-all duration-300 hover:scale-[1.02] hover:shadow-2xl ${app.hoverShadow}`}
               >
+                {/* Invisible overlay link for card click */}
+                <Link href={app.href} className="absolute inset-0 z-0" aria-label={`Learn more about ${app.name}`} />
+
                 {/* Gradient accent bar */}
                 <div className={`absolute top-0 left-0 h-1.5 w-full bg-gradient-to-r ${app.gradient}`} />
 
@@ -89,13 +91,13 @@ export default function Home() {
                 <p className="mt-4 text-sm text-gray-600 dark:text-gray-400">
                   {app.description}
                 </p>
-                <div className="mt-6 flex items-center gap-3">
+                <div className="relative z-10 mt-6 flex items-center gap-3">
                   <AppStoreButton href={app.appStoreUrl} />
                   <span className="text-sm font-medium text-gray-400 transition group-hover:translate-x-1 group-hover:text-gray-600 dark:group-hover:text-gray-300">
                     Learn more →
                   </span>
                 </div>
-              </Link>
+              </div>
             ))}
           </div>
         </div>
