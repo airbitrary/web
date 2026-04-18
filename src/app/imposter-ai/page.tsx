@@ -23,7 +23,7 @@ export default function ImposterAIPage() {
         tagline={IMPOSTER_AI.tagline}
         description={IMPOSTER_AI.description}
         appStoreUrl={IMPOSTER_AI.appStoreUrl}
-        gradient="from-sky-50 to-blue-100 dark:from-sky-950/30 dark:to-blue-950/30"
+        gradient="from-blue-100 via-cyan-50 to-teal-100 dark:from-blue-950/50 dark:via-cyan-950/30 dark:to-teal-950/50"
       />
 
       {/* Features */}

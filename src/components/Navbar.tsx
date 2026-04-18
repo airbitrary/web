@@ -8,10 +8,10 @@ export default function Navbar() {
   const [open, setOpen] = useState(false);
 
   return (
-    <nav className="sticky top-0 z-50 border-b border-gray-200 bg-white/80 backdrop-blur dark:border-gray-800 dark:bg-gray-950/80">
+    <nav className="sticky top-0 z-50 border-b border-gray-200/50 bg-white/70 backdrop-blur-lg dark:border-gray-800/50 dark:bg-gray-950/70">
       <div className="mx-auto flex max-w-6xl items-center justify-between px-4 py-3">
-        <Link href="/" className="text-xl font-bold tracking-tight">
-          {SITE.name}
+        <Link href="/" className="text-xl font-extrabold tracking-tight">
+          <span className="fun-gradient-text">AI</span>bitrary
         </Link>
 
         {/* Desktop links */}

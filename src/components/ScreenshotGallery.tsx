@@ -9,11 +9,14 @@ export default function ScreenshotGallery({ appName }: { appName: string }) {
           {placeholders.map((num) => (
             <div
               key={num}
-              className="flex h-[500px] w-[240px] shrink-0 snap-center items-center justify-center rounded-3xl border-2 border-dashed border-gray-300 bg-gray-100 dark:border-gray-600 dark:bg-gray-800"
+              className="flex h-[500px] w-[240px] shrink-0 snap-center items-center justify-center rounded-3xl border-2 border-dashed border-purple-300 bg-gradient-to-b from-purple-50 to-pink-50 transition-transform duration-300 hover:scale-[1.03] dark:border-purple-700 dark:from-purple-950/30 dark:to-pink-950/30"
             >
-              <p className="text-sm text-gray-400 dark:text-gray-500">
-                {appName} Screenshot {num}
-              </p>
+              <div className="text-center">
+                <span className="text-4xl">📱</span>
+                <p className="mt-2 text-sm text-gray-400 dark:text-gray-500">
+                  {appName} Screenshot {num}
+                </p>
+              </div>
             </div>
           ))}
         </div>

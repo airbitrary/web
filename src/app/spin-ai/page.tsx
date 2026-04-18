@@ -23,7 +23,7 @@ export default function SpinAIPage() {
         tagline={SPIN_AI.tagline}
         description={SPIN_AI.description}
         appStoreUrl={SPIN_AI.appStoreUrl}
-        gradient="from-violet-50 to-purple-100 dark:from-violet-950/30 dark:to-purple-950/30"
+        gradient="from-purple-100 via-pink-50 to-orange-100 dark:from-purple-950/50 dark:via-pink-950/30 dark:to-orange-950/50"
       />
 
       {/* Features */}
