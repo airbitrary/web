@@ -57,7 +57,7 @@ export default function ImposterAIPage() {
       <section className="py-16 md:py-20">
         <div className="mx-auto max-w-6xl px-4">
           <h2 className="mb-10 text-center text-3xl font-bold">Features</h2>
-          <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+          <div className="grid grid-cols-2 gap-3 md:gap-6 lg:grid-cols-3">
             {IMPOSTER_AI.features.map((f) => (
               <FeatureCard
                 key={f.title}
@@ -80,15 +80,15 @@ export default function ImposterAIPage() {
             10 unique characters, each with their own personality and
             clue-giving style
           </p>
-          <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5">
+          <div className="grid grid-cols-2 gap-3 sm:grid-cols-3 lg:grid-cols-5">
             {IMPOSTER_AI.agents.map((agent) => (
               <div
                 key={agent.name}
-                className="rounded-2xl border border-gray-200 bg-white p-5 text-center dark:border-gray-700 dark:bg-gray-900"
+                className="rounded-xl md:rounded-2xl border border-gray-200 bg-white p-3 md:p-5 text-center dark:border-gray-700 dark:bg-gray-900"
               >
-                <span className="text-4xl">{agent.emoji}</span>
-                <h3 className="mt-2 text-sm font-semibold">{agent.name}</h3>
-                <p className="mt-1 text-xs text-gray-500 dark:text-gray-400">
+                <span className="text-3xl md:text-4xl">{agent.emoji}</span>
+                <h3 className="mt-1 md:mt-2 text-xs md:text-sm font-semibold">{agent.name}</h3>
+                <p className="mt-0.5 md:mt-1 text-[11px] md:text-xs text-gray-500 dark:text-gray-400">
                   {agent.personality}
                 </p>
                 {agent.free && (

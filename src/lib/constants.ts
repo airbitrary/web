@@ -115,7 +115,7 @@ export const IMPOSTER_AI = {
     {
       title: "Affordable Premium",
       description:
-        "Unlock all categories, agents, and features for just $1.99 / 6 months.",
+        "Unlock all categories, agents, and features for just $2.99 / 6 months.",
       icon: "💎",
     },
   ],
@@ -160,7 +160,7 @@ export const IMPOSTER_AI = {
     {
       question: "Is Imposter AI free?",
       answer:
-        "The app is free with 1 category (Food & Drinks) and 1 AI agent. Unlock everything for $1.99 / 6 months.",
+        "The app is free with 1 category (Food & Drinks) and 1 AI agent. Unlock everything for $2.99 / 6 months.",
     },
     {
       question: "Does it need internet?",

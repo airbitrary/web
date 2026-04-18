@@ -19,7 +19,7 @@ export default function FAQAccordion({ items }: FAQAccordionProps) {
             key={i}
             className="group rounded-xl border border-gray-200 bg-white dark:border-gray-700 dark:bg-gray-900"
           >
-            <summary className="cursor-pointer px-6 py-4 text-sm font-medium select-none list-none flex items-center justify-between">
+            <summary className="cursor-pointer px-4 py-3 md:px-6 md:py-4 text-sm font-medium select-none list-none flex items-center justify-between gap-3">
               {item.question}
               <svg
                 className="h-4 w-4 shrink-0 text-gray-500 transition-transform group-open:rotate-180"
@@ -35,7 +35,7 @@ export default function FAQAccordion({ items }: FAQAccordionProps) {
                 />
               </svg>
             </summary>
-            <div className="px-6 pb-4 text-sm text-gray-600 dark:text-gray-400">
+            <div className="px-4 pb-3 md:px-6 md:pb-4 text-sm text-gray-600 dark:text-gray-400">
               {item.answer}
             </div>
           </details>

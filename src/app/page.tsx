@@ -59,7 +59,7 @@ export default function Home() {
 
         <div className="relative mx-auto max-w-4xl px-4 text-center">
           {/* Floating emojis */}
-          <div className="mb-6 flex justify-center gap-4 text-4xl md:text-5xl">
+          <div className="mb-6 flex justify-center gap-3 md:gap-4 text-3xl md:text-5xl">
             <span className="animate-float" style={{ animationDelay: "0s" }}>🎡</span>
             <span className="animate-float" style={{ animationDelay: "0.5s" }}>🎮</span>
             <span className="animate-float" style={{ animationDelay: "1s" }}>🧠</span>
@@ -89,11 +89,11 @@ export default function Home() {
           <h2 className="mb-12 text-center text-2xl font-bold text-gray-400 uppercase tracking-widest dark:text-gray-500">
             Our Apps
           </h2>
-          <div className="grid gap-8 md:grid-cols-2">
+          <div className="grid gap-6 md:gap-8 md:grid-cols-2">
             {apps.map((app) => (
               <div
                 key={app.href}
-                className={`group relative overflow-hidden rounded-3xl bg-gradient-to-br ${app.cardBg} border-2 ${app.borderColor} p-8 transition-all duration-300 hover:scale-[1.02] hover:shadow-2xl ${app.hoverShadow}`}
+                className={`group relative overflow-hidden rounded-2xl md:rounded-3xl bg-gradient-to-br ${app.cardBg} border-2 ${app.borderColor} p-5 md:p-8 transition-all duration-300 hover:scale-[1.02] hover:shadow-2xl ${app.hoverShadow}`}
               >
                 {/* Invisible overlay link for card click */}
                 <Link href={app.href} className="absolute inset-0 z-0" aria-label={`Learn more about ${app.name}`} />
@@ -101,7 +101,7 @@ export default function Home() {
                 {/* Gradient accent bar */}
                 <div className={`absolute top-0 left-0 h-1.5 w-full bg-gradient-to-r ${app.gradient}`} />
 
-                <span className="inline-block text-6xl animate-wiggle">{app.icon}</span>
+                <span className="inline-block text-5xl md:text-6xl animate-wiggle">{app.icon}</span>
                 <h2 className="mt-4 text-2xl font-extrabold">
                   {app.name}
                 </h2>
