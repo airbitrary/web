@@ -3,7 +3,7 @@ export const SITE = {
   tagline: "AI-powered apps that make life playful",
   url: "https://airbitrary.com",
   developer: "Suneet Nangia",
-  email: "airbitrary@gmail.com",
+  email: "support@airbitrary.com",
   copyright: `© ${new Date().getFullYear()} Suneet Nangia. All rights reserved.`,
 };
 

@@ -15,7 +15,7 @@ const organizationJsonLd = {
   url: "https://airbitrary.com",
   description:
     "Airbitrary builds delightful iOS apps powered by Apple Intelligence.",
-  email: "airbitrary@gmail.com",
+  email: "support@airbitrary.com",
 };
 
 const apps = [
