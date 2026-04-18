@@ -127,7 +127,15 @@ export default function ImposterAIPage() {
         </div>
       </section>
 
-      <ScreenshotGallery appName="Imposter AI" />
+      <ScreenshotGallery
+        appName="Imposter AI"
+        screenshots={[
+          { src: "/screenshots/imposter-ai/1.png", alt: "Imposter AI game setup screen with player names, category selection, and AI agent" },
+          { src: "/screenshots/imposter-ai/2.png", alt: "Secret word reveal screen showing 'Neurologist' with Wikipedia definition" },
+          { src: "/screenshots/imposter-ai/3.png", alt: "AI Agent Quacksworth reading the secret word before discussion begins" },
+          { src: "/screenshots/imposter-ai/4.png", alt: "Game results screen revealing the imposter with New Game and Play Again options" },
+        ]}
+      />
 
       <FAQAccordion items={IMPOSTER_AI.faq} />
     </>

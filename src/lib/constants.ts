@@ -133,8 +133,8 @@ export const IMPOSTER_AI = {
   ],
   categories: [
     { name: "Food & Drinks", emoji: "🥘", free: true },
-    { name: "Occupations", emoji: "👨‍⚕️", free: true },
-    { name: "Household Items", emoji: "🏡", free: true },
+    { name: "Occupations", emoji: "👨‍⚕️", free: false },
+    { name: "Household Items", emoji: "🏡", free: false },
     { name: "Animals", emoji: "🐸", free: false },
     { name: "Places", emoji: "🌍", free: false },
     { name: "Sports", emoji: "⚽️", free: false },
@@ -160,7 +160,7 @@ export const IMPOSTER_AI = {
     {
       question: "Is Imposter AI free?",
       answer:
-        "The app is free with 3 categories and 1 AI agent. Unlock everything for $1.99 / 6 months.",
+        "The app is free with 1 category (Food & Drinks) and 1 AI agent. Unlock everything for $1.99 / 6 months.",
     },
     {
       question: "Does it need internet?",
