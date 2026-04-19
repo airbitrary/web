@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 import { IMPOSTER_AI } from "@/lib/constants";
 import Hero from "@/components/Hero";
 import FeatureCard from "@/components/FeatureCard";
@@ -138,6 +139,15 @@ export default function ImposterAIPage() {
       />
 
       <FAQAccordion items={IMPOSTER_AI.faq} />
+
+      <section className="py-8 text-center">
+        <Link
+          href="/imposter-ai/privacy"
+          className="text-sm text-gray-400 hover:underline dark:text-gray-400"
+        >
+          Privacy Policy
+        </Link>
+      </section>
     </>
   );
 }

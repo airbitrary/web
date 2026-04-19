@@ -44,7 +44,15 @@ export default function PrivacyPage() {
         <h2>Imposter AI</h2>
         <p>
           Imposter AI does not collect any data from users. All AI processing,
-          game state, and user preferences remain on your device.
+          game state, and user preferences remain on your device. For more
+          details, see the{" "}
+          <Link
+            href="/imposter-ai/privacy"
+            className="text-blue-400 hover:underline dark:text-blue-400"
+          >
+            Imposter AI Privacy Policy
+          </Link>
+          .
         </p>
 
         <h2>Third-Party Services</h2>
