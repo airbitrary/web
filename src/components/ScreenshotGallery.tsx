@@ -25,16 +25,16 @@ export default function ScreenshotGallery({
                   key={i}
                   src={shot.src}
                   alt={shot.alt}
-                  className="h-[380px] md:h-[500px] w-auto shrink-0 snap-center rounded-2xl md:rounded-3xl border-2 border-purple-200 object-cover transition-transform duration-300 hover:scale-[1.03] dark:border-purple-700"
+                  className="h-[380px] md:h-[500px] w-auto shrink-0 snap-center rounded-2xl md:rounded-3xl border-2 border-purple-700 object-cover transition-transform duration-300 hover:scale-[1.03] dark:border-purple-700"
                 />
               ) : (
                 <div
                   key={i}
-                  className="flex h-[380px] md:h-[500px] w-[185px] md:w-[240px] shrink-0 snap-center items-center justify-center rounded-2xl md:rounded-3xl border-2 border-dashed border-purple-300 bg-gradient-to-b from-purple-50 to-pink-50 transition-transform duration-300 hover:scale-[1.03] dark:border-purple-700 dark:from-purple-950/30 dark:to-pink-950/30"
+                  className="flex h-[380px] md:h-[500px] w-[185px] md:w-[240px] shrink-0 snap-center items-center justify-center rounded-2xl md:rounded-3xl border-2 border-dashed border-purple-700 bg-gradient-to-b from-purple-950/30 to-pink-950/30 transition-transform duration-300 hover:scale-[1.03] dark:border-purple-700 dark:from-purple-950/30 dark:to-pink-950/30"
                 >
                   <div className="text-center">
                     <span className="text-4xl">📱</span>
-                    <p className="mt-2 text-sm text-gray-400 dark:text-gray-500">
+                    <p className="mt-2 text-sm text-gray-500 dark:text-gray-500">
                       {appName} Screenshot {i + 1}
                     </p>
                   </div>
@@ -47,7 +47,7 @@ export default function ScreenshotGallery({
             {Array.from({ length: total }, (_, i) => (
               <div
                 key={i}
-                className="h-1.5 w-1.5 rounded-full bg-purple-300 dark:bg-purple-700"
+                className="h-1.5 w-1.5 rounded-full bg-purple-700 dark:bg-purple-700"
               />
             ))}
           </div>

@@ -8,7 +8,7 @@ export default function Navbar() {
   const [open, setOpen] = useState(false);
 
   return (
-    <nav className="sticky top-0 z-50 border-b border-gray-200/50 bg-white/70 backdrop-blur-lg dark:border-gray-800/50 dark:bg-gray-950/70">
+    <nav className="sticky top-0 z-50 border-b border-gray-800/50 bg-gray-950/70 backdrop-blur-lg dark:border-gray-800/50 dark:bg-gray-950/70">
       <div className="mx-auto flex max-w-6xl items-center justify-between px-4 py-3">
         <Link href="/" className="text-xl font-extrabold tracking-tight">
           <span className="fun-gradient-text">AI</span>bitrary
@@ -20,7 +20,7 @@ export default function Navbar() {
             <Link
               key={link.href}
               href={link.href}
-              className="text-sm font-medium text-gray-600 transition hover:text-gray-900 dark:text-gray-400 dark:hover:text-white"
+              className="text-sm font-medium text-gray-400 transition hover:text-white dark:text-gray-400 dark:hover:text-white"
             >
               {link.label}
             </Link>
@@ -60,13 +60,13 @@ export default function Navbar() {
 
       {/* Mobile menu */}
       {open && (
-        <div className="border-t border-gray-200 px-4 pb-4 md:hidden dark:border-gray-800">
+        <div className="border-t border-gray-800 px-4 pb-4 md:hidden dark:border-gray-800">
           {NAV_LINKS.map((link) => (
             <Link
               key={link.href}
               href={link.href}
               onClick={() => setOpen(false)}
-              className="block py-2 text-sm font-medium text-gray-600 dark:text-gray-400"
+              className="block py-2 text-sm font-medium text-gray-400 dark:text-gray-400"
             >
               {link.label}
             </Link>

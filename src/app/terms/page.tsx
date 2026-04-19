@@ -13,11 +13,11 @@ export default function TermsPage() {
   return (
     <div className="mx-auto max-w-3xl px-4 py-16">
       <h1 className="text-3xl font-bold">Terms of Service</h1>
-      <p className="mt-2 text-sm text-gray-500 dark:text-gray-400">
+      <p className="mt-2 text-sm text-gray-400 dark:text-gray-400">
         Last updated: April 2026
       </p>
 
-      <div className="prose prose-gray mt-8 dark:prose-invert max-w-none">
+      <div className="prose prose-invert mt-8 dark:prose-invert max-w-none">
         <h2>Acceptance of Terms</h2>
         <p>
           By downloading or using any {SITE.name} application (&quot;Spin
@@ -71,7 +71,7 @@ export default function TermsPage() {
           Questions about these terms? Contact us at{" "}
           <a
             href={`mailto:${SITE.email}`}
-            className="text-blue-600 hover:underline dark:text-blue-400"
+            className="text-blue-400 hover:underline dark:text-blue-400"
           >
             {SITE.email}
           </a>

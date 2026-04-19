@@ -14,11 +14,11 @@ export default function PrivacyPage() {
   return (
     <div className="mx-auto max-w-3xl px-4 py-16">
       <h1 className="text-3xl font-bold">Privacy Policy</h1>
-      <p className="mt-2 text-sm text-gray-500 dark:text-gray-400">
+      <p className="mt-2 text-sm text-gray-400 dark:text-gray-400">
         Last updated: April 2026
       </p>
 
-      <div className="prose prose-gray mt-8 dark:prose-invert max-w-none">
+      <div className="prose prose-invert mt-8 dark:prose-invert max-w-none">
         <h2>Overview</h2>
         <p>
           At {SITE.name}, we take your privacy seriously. Our apps are designed
@@ -34,7 +34,7 @@ export default function PrivacyPage() {
             href="https://github.com/airbitrary/spinai/blob/main/Privacy.md"
             target="_blank"
             rel="noopener noreferrer"
-            className="text-blue-600 hover:underline dark:text-blue-400"
+            className="text-blue-400 hover:underline dark:text-blue-400"
           >
             Spin AI Privacy Policy on GitHub
           </Link>
@@ -65,7 +65,7 @@ export default function PrivacyPage() {
           If you have questions about this privacy policy, contact us at{" "}
           <a
             href={`mailto:${SITE.email}`}
-            className="text-blue-600 hover:underline dark:text-blue-400"
+            className="text-blue-400 hover:underline dark:text-blue-400"
           >
             {SITE.email}
           </a>
