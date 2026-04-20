@@ -31,12 +31,10 @@ export default function PrivacyPage() {
           Spin AI does not collect any data from users. All processing happens
           on-device. For more details, see the{" "}
           <Link
-            href="https://github.com/airbitrary/spinai/blob/main/Privacy.md"
-            target="_blank"
-            rel="noopener noreferrer"
+            href="/spin-ai/privacy"
             className="text-blue-400 hover:underline dark:text-blue-400"
           >
-            Spin AI Privacy Policy on GitHub
+            Spin AI Privacy Policy
           </Link>
           .
         </p>
