@@ -141,12 +141,20 @@ export default function ImposterAIPage() {
       <FAQAccordion items={IMPOSTER_AI.faq} />
 
       <section className="py-8 text-center">
-        <Link
-          href="/imposter-ai/privacy"
-          className="text-sm text-gray-400 hover:underline dark:text-gray-400"
-        >
-          Privacy Policy
-        </Link>
+        <div className="flex justify-center gap-6">
+          <Link
+            href="/imposter-ai/support"
+            className="text-sm text-gray-400 hover:underline dark:text-gray-400"
+          >
+            Support
+          </Link>
+          <Link
+            href="/imposter-ai/privacy"
+            className="text-sm text-gray-400 hover:underline dark:text-gray-400"
+          >
+            Privacy Policy
+          </Link>
+        </div>
       </section>
     </>
   );
