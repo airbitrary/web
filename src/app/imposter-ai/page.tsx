@@ -46,7 +46,7 @@ export default function ImposterAIPage() {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }}
       />
       <Hero
-        icon="🎭"
+        icon="🕵️"
         title={IMPOSTER_AI.name}
         tagline={IMPOSTER_AI.tagline}
         description={IMPOSTER_AI.description}

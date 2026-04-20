@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { SITE } from "@/lib/constants";
+import { SITE, IMPOSTER_AI } from "@/lib/constants";
 
 export const metadata: Metadata = {
   title: "Imposter AI — Support",
@@ -91,7 +91,7 @@ export default function ImposterAISupportPage() {
     <div className="mx-auto max-w-3xl px-4 py-16">
       {/* Header */}
       <div className="mb-12 text-center">
-        <span className="text-5xl">🎭</span>
+        <span className="text-5xl">🕵️</span>
         <h1 className="mt-4 text-3xl font-bold md:text-4xl">Support</h1>
         <p className="mt-1 text-lg text-gray-400">Imposter AI</p>
         <p className="mt-3 text-sm text-gray-500">
@@ -461,6 +461,16 @@ export default function ImposterAISupportPage() {
                 className="text-blue-400 hover:underline"
               >
                 {SITE.email}
+              </a>
+            </Bullet>
+            <Bullet label="App Store:">
+              <a
+                href={IMPOSTER_AI.appStoreUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-blue-400 hover:underline"
+              >
+                Imposter AI on the App Store
               </a>
             </Bullet>
           </BulletList>

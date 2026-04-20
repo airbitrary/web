@@ -66,7 +66,7 @@ export default function ImposterAIPrivacyPage() {
     <div className="mx-auto max-w-3xl px-4 py-16">
       {/* Header */}
       <div className="mb-12 text-center">
-        <span className="text-5xl">🎭</span>
+        <span className="text-5xl">🕵️</span>
         <h1 className="mt-4 text-3xl font-bold md:text-4xl">
           Privacy Policy
         </h1>
