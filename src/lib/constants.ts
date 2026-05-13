@@ -77,7 +77,7 @@ export const IMPOSTER_AI = {
   tagline: "Who's bluffing?",
   description:
     "Imposter AI is a social party game powered by Apple Intelligence. One player is secretly the imposter — they don't know the secret word but must bluff their way through. With 10 unique AI agents, 13 categories, and on-device AI, every round is unpredictable and hilarious.",
-  appStoreUrl: "#",
+  appStoreUrl: "https://apps.apple.com/app/imposter-ai/id6762190167",
   category: "Games",
   ageRating: "13+",
   requires: "iOS 26.0 with Apple Intelligence",
@@ -168,9 +168,9 @@ export const IMPOSTER_AI = {
         "No. Imposter AI runs entirely on-device using Apple Intelligence.",
     },
     {
-      question: "When will it be available?",
+      question: "Where can I download Imposter AI?",
       answer:
-        "Imposter AI is currently in development. Stay tuned for the App Store launch!",
+        "Imposter AI is available now on the App Store. Tap the download button to get started!",
     },
   ],
 };

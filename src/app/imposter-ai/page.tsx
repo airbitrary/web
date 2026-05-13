@@ -138,7 +138,29 @@ export default function ImposterAIPage() {
         ]}
       />
 
-      <FAQAccordion items={IMPOSTER_AI.faq} />
+      <FAQAccordion
+        items={IMPOSTER_AI.faq.map((item) =>
+          item.question === "Where can I download Imposter AI?"
+            ? {
+                question: item.question,
+                answer: (
+                  <>
+                    Imposter AI is available now on the{" "}
+                    <a
+                      href={IMPOSTER_AI.appStoreUrl}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-blue-400 underline hover:text-blue-300"
+                    >
+                      App Store
+                    </a>
+                    . Download it to get started!
+                  </>
+                ),
+              }
+            : item,
+        )}
+      />
 
       <section className="py-8 text-center">
         <div className="flex justify-center gap-6">
