@@ -1,11 +1,14 @@
 import type { Metadata } from "next";
-import { SITE } from "@/lib/constants";
+import { SITE, IMPOSTER_AI } from "@/lib/constants";
 
 export const metadata: Metadata = {
   title: "Imposter AI — Privacy Policy",
   description: "Privacy Policy for Imposter AI.",
   alternates: {
     canonical: "/imposter-ai/privacy",
+  },
+  itunes: {
+    appId: IMPOSTER_AI.appId,
   },
 };
 

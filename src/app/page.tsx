@@ -16,6 +16,7 @@ const organizationJsonLd = {
   description:
     "Airbitrary builds delightful iOS apps powered by Apple Intelligence.",
   email: "support@airbitrary.com",
+  sameAs: [SPIN_AI.appStoreUrl, IMPOSTER_AI.appStoreUrl],
 };
 
 const apps = [
@@ -114,7 +115,11 @@ export default function Home() {
                 <div className="relative z-10 mt-6 flex items-center gap-3">
                   <AppStoreButton href={app.appStoreUrl} />
                   <span className="text-sm font-medium text-gray-400 transition group-hover:translate-x-1 group-hover:text-gray-300 dark:group-hover:text-gray-300">
-                    Learn more →
+                    {app.name === "Imposter AI"
+                      ? "Play the imposter game →"
+                      : app.name === "Spin AI"
+                      ? "Spin the wheel →"
+                      : "Learn more →"}
                   </span>
                 </div>
               </div>

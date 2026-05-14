@@ -1,11 +1,14 @@
 import type { Metadata } from "next";
-import { SITE } from "@/lib/constants";
+import { SITE, SPIN_AI } from "@/lib/constants";
 
 export const metadata: Metadata = {
   title: "Spin AI — Privacy Policy",
   description: "Privacy Policy for Spin AI.",
   alternates: {
     canonical: "/spin-ai/privacy",
+  },
+  itunes: {
+    appId: SPIN_AI.appId,
   },
 };
 

@@ -9,6 +9,9 @@ export const metadata: Metadata = {
   alternates: {
     canonical: "/imposter-ai/support",
   },
+  itunes: {
+    appId: IMPOSTER_AI.appId,
+  },
 };
 
 function Section({

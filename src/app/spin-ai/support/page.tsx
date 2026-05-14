@@ -9,6 +9,9 @@ export const metadata: Metadata = {
   alternates: {
     canonical: "/spin-ai/support",
   },
+  itunes: {
+    appId: SPIN_AI.appId,
+  },
 };
 
 function Section({

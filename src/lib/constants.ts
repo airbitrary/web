@@ -11,8 +11,9 @@ export const SPIN_AI = {
   name: "Spin AI",
   tagline: "A wheel of possibilities",
   description:
-    "Spin AI turns every choice into a delightful moment, powered by on-device Apple Intelligence. From \"What should we eat?\" to \"Which game should we play?\", beautiful spinning wheels blend smart tech with stunning visuals to make decisions effortless, playful, and genuinely fun.",
+    "Spin AI is a spin the wheel app for iPhone that turns every decision into a delightful moment. Build custom wheels, quizzes, and flash cards — or jump into ready-made collections — all powered by on-device Apple Intelligence. From \"What should we eat?\" to study sessions, it's the smartest random picker and decision wheel on iOS.",
   appStoreUrl: "https://apps.apple.com/us/app/spin-ai/id6753998404",
+  appId: "6753998404",
   privacyUrl: "https://github.com/airbitrary/spinai/blob/main/Privacy.md",
   category: "Utilities",
   ageRating: "13+",
@@ -51,23 +52,44 @@ export const SPIN_AI = {
   ],
   faq: [
     {
-      question: "Is Spin AI free?",
+      question: "What is Spin AI?",
       answer:
-        "Yes! Spin AI is free to download with optional in-app purchases for premium features.",
+        "Spin AI is a spin the wheel app for iPhone. It helps you make decisions, run quizzes, and study flash cards with beautiful animated wheels — all powered by on-device Apple Intelligence so it works offline and keeps your data private.",
     },
     {
-      question: "Does it require an internet connection?",
+      question: "What can I use Spin AI for?",
       answer:
-        "No. Spin AI uses on-device Apple Intelligence, so everything works offline.",
+        "Use Spin AI as a random picker for everyday decisions (\"What should we eat?\", \"Whose turn is it?\"), as a quiz wheel for trivia nights, as a flash card study tool, or to pick teams, chores, gifts, and prize winners.",
+    },
+    {
+      question: "Is Spin AI like a wheel of names?",
+      answer:
+        "Yes — and more. You can drop names in and spin to pick someone fairly, just like a wheel of names. Spin AI also generates whole wheels for you from any topic using on-device AI, builds quizzes, and stores flash card decks.",
+    },
+    {
+      question: "Does Spin AI need internet?",
+      answer:
+        "No. Spin AI uses on-device Apple Intelligence, so wheel spinning, AI generation, quizzes, and flash cards all work offline.",
+    },
+    {
+      question: "Is Spin AI free?",
+      answer:
+        "Yes. Spin AI is free to download with optional in-app purchases for premium features.",
     },
     {
       question: "What devices are supported?",
-      answer: "Spin AI requires an iPhone running iOS 18.5 or later.",
+      answer:
+        "Spin AI requires an iPhone running iOS 18.5 or later with Apple Intelligence.",
     },
     {
       question: "Is my data collected?",
       answer:
         "No. The developer does not collect any data from this app. Everything stays on your device.",
+    },
+    {
+      question: "Where can I download Spin AI?",
+      answer:
+        "Spin AI is available now on the App Store. Tap the download button to get started!",
     },
   ],
 };
@@ -76,8 +98,9 @@ export const IMPOSTER_AI = {
   name: "Imposter AI",
   tagline: "Who's bluffing?",
   description:
-    "Imposter AI is a social party game powered by Apple Intelligence. One player is secretly the imposter — they don't know the secret word but must bluff their way through. With 10 unique AI agents, 13 categories, and on-device AI, every round is unpredictable and hilarious.",
+    "Imposter AI is a social deduction party game for iPhone. One player is secretly the imposter — they don't know the secret word and must bluff their way through. Powered entirely on-device by Apple Intelligence, with 10 AI agents and 13 word categories, it turns any gathering into a hilarious imposter party game.",
   appStoreUrl: "https://apps.apple.com/app/imposter-ai/id6762190167",
+  appId: "6762190167",
   category: "Games",
   ageRating: "13+",
   requires: "iOS 26.0 with Apple Intelligence",
@@ -148,24 +171,44 @@ export const IMPOSTER_AI = {
   ],
   faq: [
     {
+      question: "What is the imposter game?",
+      answer:
+        "The imposter game is a social deduction party game where one secret player — the imposter — doesn't know the word everyone else is describing. Players take turns giving one-word clues and then vote on who they think is bluffing. Imposter AI brings this classic party format to iPhone with on-device AI agents who can play alongside you.",
+    },
+    {
       question: "How do you play Imposter AI?",
       answer:
-        "Players gather and one is secretly assigned as the imposter. Everyone else receives a secret word. Players take turns giving one-word clues, then discuss and vote to find the imposter.",
+        "Pick a category, choose your players (humans, AI agents, or a mix), and start a round. Everyone except the imposter sees the secret word. Each player gives a one-word clue in turn, then the group discusses and votes. Find the imposter to win — or, if you're the imposter, bluff your way to victory.",
+    },
+    {
+      question: "Is Imposter AI like Among Us?",
+      answer:
+        "They share the same social-deduction DNA, but Imposter AI is played in person around a single iPhone (or with AI agents filling in). It's closer to party classics like Spyfall or Werewords — a quick, talk-and-vote imposter game with no maps or tasks.",
+    },
+    {
+      question: "How many players can play?",
+      answer:
+        "Imposter AI works with 3 or more players. You can play with just friends, just AI agents, or mix humans and AI agents in the same round.",
+    },
+    {
+      question: "Can I play Imposter AI on iPhone?",
+      answer:
+        "Yes. Imposter AI is an iPhone app built for iOS 26 with Apple Intelligence. Download it free from the App Store.",
+    },
+    {
+      question: "Do I need internet to play the imposter game?",
+      answer:
+        "No. Imposter AI runs entirely on-device using Apple Intelligence, so you can play offline at parties, in the car, or anywhere with no signal.",
     },
     {
       question: "Can I play with just AI agents?",
       answer:
-        "Yes! AI agents can fill in as players, each with their own personality and clue-giving style.",
+        "Yes. The 10 AI agents each have distinct personalities and clue-giving styles, so you can fill any seat at the table without a full group.",
     },
     {
       question: "Is Imposter AI free?",
       answer:
-        "The app is free with 1 category (Food & Drinks) and 1 AI agent. Unlock everything for $2.99 / 6 months.",
-    },
-    {
-      question: "Does it need internet?",
-      answer:
-        "No. Imposter AI runs entirely on-device using Apple Intelligence.",
+        "The app is free with 1 category (Food & Drinks) and 1 AI agent. Unlock all 13 categories and 10 agents for $2.99 / 6 months.",
     },
     {
       question: "Where can I download Imposter AI?",
