@@ -101,6 +101,8 @@ export const IMPOSTER_AI = {
     "Imposter AI is a social deduction party game for iPhone. One player is secretly the imposter — they don't know the secret word and must bluff their way through. Powered entirely on-device by Apple Intelligence, with 10 AI agents and 13 word categories, it turns any gathering into a hilarious imposter party game.",
   appStoreUrl: "https://apps.apple.com/app/imposter-ai/id6762190167",
   appId: "6762190167",
+  instagramHandle: "imposter.ai.game",
+  instagramUrl: "https://instagram.com/imposter.ai.game",
   category: "Games",
   ageRating: "13+",
   requires: "iOS 26.0 with Apple Intelligence",

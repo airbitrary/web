@@ -40,6 +40,12 @@
     <priority>0.4</priority>
   </url>
   <url>
+    <loc>https://airbitrary.com/imposter-ai/draws</loc>
+    <lastmod>2026-06-07</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
     <loc>https://airbitrary.com/privacy</loc>
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>

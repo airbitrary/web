@@ -291,6 +291,29 @@ export default function ImposterAIPage() {
         )}
       />
 
+      {/* Weekly giveaway */}
+      <section className="py-16 md:py-20">
+        <div className="mx-auto max-w-3xl px-4">
+          <div className="rounded-2xl border border-gray-700 bg-gradient-to-r from-purple-950/40 via-pink-950/30 to-orange-950/40 p-8 text-center dark:border-gray-700">
+            <span className="text-4xl">🎁</span>
+            <h2 className="mt-3 text-2xl font-bold md:text-3xl">
+              Win free Premium every week
+            </h2>
+            <p className="mx-auto mt-3 max-w-xl text-gray-400 dark:text-gray-400">
+              Follow us on Instagram and enter our free weekly draw for a chance
+              to unlock all categories and AI agents.
+            </p>
+            <Link
+              href="/imposter-ai/draws"
+              className="mt-6 inline-flex items-center gap-2 rounded-full bg-gradient-to-r from-purple-500 via-pink-500 to-orange-400 px-6 py-3 text-sm font-semibold text-white transition hover:opacity-90"
+            >
+              <span>📸</span>
+              Enter the weekly giveaway
+            </Link>
+          </div>
+        </div>
+      </section>
+
       <section className="py-8 text-center">
         <div className="flex justify-center gap-6">
           <Link
@@ -298,6 +321,12 @@ export default function ImposterAIPage() {
             className="text-sm text-gray-400 hover:underline dark:text-gray-400"
           >
             Support
+          </Link>
+          <Link
+            href="/imposter-ai/draws"
+            className="text-sm text-gray-400 hover:underline dark:text-gray-400"
+          >
+            Giveaway
           </Link>
           <Link
             href="/imposter-ai/privacy"
