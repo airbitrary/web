@@ -1,7 +1,10 @@
+import Image from "next/image";
 import AppStoreButton from "./AppStoreButton";
 
 interface HeroProps {
   icon: string;
+  imageSrc?: string;
+  imageAlt?: string;
   title: string;
   tagline: string;
   description: string;
@@ -11,6 +14,8 @@ interface HeroProps {
 
 export default function Hero({
   icon,
+  imageSrc,
+  imageAlt = "",
   title,
   tagline,
   description,
@@ -25,7 +30,18 @@ export default function Hero({
       <div className="pointer-events-none absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 h-96 w-96 rounded-full bg-white/5 blur-3xl animate-pulse-glow dark:bg-white/5" />
 
       <div className="relative mx-auto max-w-4xl px-4 text-center">
-        <span className="inline-block text-7xl md:text-8xl animate-float">{icon}</span>
+        {imageSrc ? (
+          <Image
+            src={imageSrc}
+            alt={imageAlt}
+            width={160}
+            height={160}
+            preload
+            className="mx-auto h-32 w-32 rounded-[28px] shadow-2xl shadow-black/40 md:h-40 md:w-40 md:rounded-[36px]"
+          />
+        ) : (
+          <span className="inline-block text-7xl md:text-8xl animate-float">{icon}</span>
+        )}
         <h1 className="mt-6 text-4xl font-extrabold tracking-tight md:text-6xl">
           {title}
         </h1>

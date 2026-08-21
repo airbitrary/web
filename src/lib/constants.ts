@@ -98,7 +98,7 @@ export const IMPOSTER_AI = {
   name: "Imposter AI",
   tagline: "Who's bluffing?",
   description:
-    "Imposter AI is a social deduction party game for iPhone. One player is secretly the imposter — they don't know the secret word and must bluff their way through. Powered entirely on-device by Apple Intelligence, with 10 AI agents and 13 word categories, it turns any gathering into a hilarious imposter party game.",
+    "Imposter AI is a social deduction party game for iPhone. One player is secretly the imposter — they don't know the secret word and must bluff their way through. Play together in the room or invite friends remotely through Game Center, then let the accusations fly.",
   appStoreUrl: "https://apps.apple.com/app/imposter-ai/id6762190167",
   appId: "6762190167",
   instagramHandle: "imposter.ai.game",
@@ -120,15 +120,15 @@ export const IMPOSTER_AI = {
       icon: "📚",
     },
     {
-      title: "Multiplayer Party Game",
+      title: "Game Center Remote Play",
       description:
-        "Gather friends, assign roles, and find the imposter together.",
-      icon: "🎉",
+        "Invite friends from anywhere. The bluffing, banter, and wildly confident accusations travel beautifully.",
+      icon: "🎮",
     },
     {
       title: "Apple Intelligence",
       description:
-        "Powered entirely on-device — no internet needed, fully private.",
+        "AI runs entirely on-device — private and ready for offline local play.",
       icon: "🧠",
     },
     {
@@ -140,7 +140,7 @@ export const IMPOSTER_AI = {
     {
       title: "Affordable Premium",
       description:
-        "Unlock all categories, agents, and features for just $2.99 / 6 months.",
+        "Unlock all categories, agents, and features for just $1.99 / 6 months.",
       icon: "💎",
     },
   ],
@@ -193,6 +193,11 @@ export const IMPOSTER_AI = {
         "Imposter AI works with 3 or more players. You can play with just friends, just AI agents, or mix humans and AI agents in the same round.",
     },
     {
+      question: "Can I play Imposter AI remotely with friends?",
+      answer:
+        "Yes. Invite friends through Game Center and play together from wherever you are. Distance is no defense when your clue sounds suspicious.",
+    },
+    {
       question: "Can I play Imposter AI on iPhone?",
       answer:
         "Yes. Imposter AI is an iPhone app built for iOS 26 with Apple Intelligence. Download it free from the App Store.",
@@ -200,7 +205,7 @@ export const IMPOSTER_AI = {
     {
       question: "Do I need internet to play the imposter game?",
       answer:
-        "No. Imposter AI runs entirely on-device using Apple Intelligence, so you can play offline at parties, in the car, or anywhere with no signal.",
+        "Local games and AI agents work offline using on-device Apple Intelligence. Game Center remote play requires an internet connection so your faraway friends can join the suspicion.",
     },
     {
       question: "Can I play with just AI agents?",
@@ -210,7 +215,7 @@ export const IMPOSTER_AI = {
     {
       question: "Is Imposter AI free?",
       answer:
-        "The app is free with 1 category (Food & Drinks) and 1 AI agent. Unlock all 13 categories and 10 agents for $2.99 / 6 months.",
+        "The app is free with 1 category (Food & Drinks) and 1 AI agent. Unlock all 13 categories and 10 agents for $1.99 / 6 months.",
     },
     {
       question: "Where can I download Imposter AI?",

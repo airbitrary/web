@@ -9,7 +9,7 @@ import FAQAccordion from "@/components/FAQAccordion";
 const PAGE_TITLE =
   "Imposter AI — The AI-Powered Imposter Party Game for iPhone";
 const PAGE_DESCRIPTION =
-  "Imposter AI is a social deduction party game for iPhone. Find the bluffer with 10 on-device Apple Intelligence agents and 13 word categories. Free on the App Store.";
+  "Play Imposter AI with friends near or far using Game Center remote play. Find the bluffer with on-device AI agents and 13 word categories.";
 
 export const metadata: Metadata = {
   title: PAGE_TITLE,
@@ -23,6 +23,8 @@ export const metadata: Metadata = {
     "bluffing party game",
     "Apple Intelligence game",
     "party game for iPhone",
+    "Game Center multiplayer game",
+    "remote party game",
     "Spyfall alternative",
     "Among Us party game",
   ],
@@ -122,6 +124,8 @@ export default function ImposterAIPage() {
       />
       <Hero
         icon="🕵️"
+        imageSrc="/imposter-ai-icon.png"
+        imageAlt="Imposter AI app icon"
         title={IMPOSTER_AI.name}
         tagline={IMPOSTER_AI.tagline}
         description={IMPOSTER_AI.description}
@@ -135,8 +139,9 @@ export default function ImposterAIPage() {
           The imposter party game, powered by Apple Intelligence
         </h2>
         <p className="mx-auto mt-4 max-w-3xl text-center text-gray-400 dark:text-gray-400">
-          A social deduction party game for iPhone. Gather your friends, find
-          the bluffer, and let on-device AI agents fill any seat at the table.
+          Gather around one iPhone or invite friends remotely through Game
+          Center. Find the bluffer, defend your suspicious clue, and let
+          on-device AI agents fill any empty seats.
         </p>
       </section>
 
@@ -216,11 +221,13 @@ export default function ImposterAIPage() {
 
       <ScreenshotGallery
         appName="Imposter AI"
+        total={5}
         screenshots={[
           { src: "/screenshots/imposter-ai/1.png", alt: "Imposter AI imposter party game setup on iPhone with player names, category selection, and AI agent" },
           { src: "/screenshots/imposter-ai/2.png", alt: "Secret word reveal screen in the Imposter AI iPhone game showing 'Neurologist' with Wikipedia definition" },
           { src: "/screenshots/imposter-ai/3.png", alt: "AI Agent Quacksworth reading the secret word before the imposter game discussion begins" },
           { src: "/screenshots/imposter-ai/4.png", alt: "Imposter AI game results screen revealing the imposter with New Game and Play Again options" },
+          { src: "/screenshots/imposter-ai/5.png", alt: "Imposter AI game setup screen with human and AI players, multiple categories, hint controls, and imposter count" },
         ]}
       />
 
@@ -231,14 +238,14 @@ export default function ImposterAIPage() {
             How to play the imposter game
           </h2>
           <p className="mb-10 text-center text-gray-400 dark:text-gray-400">
-            A quick, talk-and-vote party game you can start in seconds on
-            iPhone.
+            One room or many time zones. The clues stay short and the
+            accusations get loud.
           </p>
           <ol className="space-y-4">
             {[
               {
                 title: "1. Pick a category and players",
-                body: "Choose from 13 categories like Food & Drinks, Movies, or Sports. Add friends, AI agents, or a mix of both — 3 players minimum.",
+                body: "Choose from 13 categories, then add local players, invite remote friends through Game Center, or let AI agents join the chaos — 3 players minimum.",
               },
               {
                 title: "2. Reveal the secret word",

@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 import { SITE, SPIN_AI, IMPOSTER_AI } from "@/lib/constants";
 import AppStoreButton from "@/components/AppStoreButton";
@@ -23,6 +24,7 @@ const apps = [
   {
     ...SPIN_AI,
     icon: "🎡",
+    imageSrc: undefined,
     href: "/spin-ai",
     gradient:
       "from-purple-700 via-pink-700 to-orange-600 dark:from-purple-700 dark:via-pink-700 dark:to-orange-600",
@@ -34,6 +36,7 @@ const apps = [
   {
     ...IMPOSTER_AI,
     icon: "🕵️",
+    imageSrc: "/imposter-ai-icon.png",
     href: "/imposter-ai",
     gradient:
       "from-blue-700 via-cyan-700 to-teal-600 dark:from-blue-700 dark:via-cyan-700 dark:to-teal-600",
@@ -102,7 +105,19 @@ export default function Home() {
                 {/* Gradient accent bar */}
                 <div className={`absolute top-0 left-0 h-1.5 w-full bg-gradient-to-r ${app.gradient}`} />
 
-                <span className="inline-block text-5xl md:text-6xl animate-wiggle">{app.icon}</span>
+                {app.imageSrc ? (
+                  <Image
+                    src={app.imageSrc}
+                    alt={`${app.name} app icon`}
+                    width={96}
+                    height={96}
+                    className="h-20 w-20 rounded-[18px] shadow-xl shadow-black/30 md:h-24 md:w-24 md:rounded-[22px]"
+                  />
+                ) : (
+                  <span className="inline-block text-5xl md:text-6xl animate-wiggle">
+                    {app.icon}
+                  </span>
+                )}
                 <h2 className="mt-4 text-2xl font-extrabold">
                   {app.name}
                 </h2>
